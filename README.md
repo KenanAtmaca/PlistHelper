@@ -14,6 +14,12 @@ if let arr = helper.getPlist(name: "deneme") as? [String] {
 ##### Decode & Encode .plist
 
 ```Swift
+  class UserModel: Codable {
+     var name:String!
+     var surname:String!
+     var age:Int!
+  }
+
   let model = UserModel()
   model.name = "Kenan"
   model.surname = "Atmaca"
